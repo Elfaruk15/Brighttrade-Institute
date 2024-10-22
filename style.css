@@ -1,0 +1,81 @@
+body{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 25px;
+    background-color: rgb(0, 183, 255);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: solid;
+}
+h1{
+    color: darkred;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+.container {
+    text-align: center;
+    position: relative;
+    background-color: none; /* Note: 'none' is not a valid color; consider using 'transparent' */
+    max-width: 100%;
+    height: auto; /* The height will adjust automatically based on the content */
+}
+.container iframe {
+    position: relative;
+    margin: 15px;
+    width: 150vh;  /* Initially set to 150vh; will adjust with media queries */
+    height: 75vh;  /* Initial height */
+    border-radius: 25px;
+    overflow: hidden;
+    border: solid 2px black; /* Add border styling */
+}
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 800px) {
+    .container iframe {
+        width: 90vw;  /* Use viewport width to make it responsive */
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 568px){
+    .container iframe {
+        width: 85vw; /* Full width on mobile */
+        height: 45vh; /* Further adjust height */
+    }
+}
+.image-box{
+    width: 300px;
+    display: flex;
+    margin: 15px;
+    
+    h2{
+        color: white;
+        text-align: center;
+        margin-top: 125px;
+        
+    }
+}
+.image-box img{
+    width: 200px;
+    display: block;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.image-box img:hover{
+    cursor: pointer;
+    width: 250px;
+
+}
